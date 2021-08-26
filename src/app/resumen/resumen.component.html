@@ -1,0 +1,80 @@
+<section class="content" id="about">
+    <div class="block-content">
+        <h3 class="block-title">Perfil</h3>
+        <h3 class="subheading">¡Hola! soy Marcela Lasso <strong>Ingeniera de sistemas & desarrollador BackEnd/FrontEnd</strong></h3>
+        <p>Profesional de el sector TI, con enfoque en diseño y desarrollo de software, aplicando las mejores y actualizadas técnicas del sector , como son Scrum, con lenguajes como Php, Java, python, Javascript, MySql. Profesional en continuo autoaprendizaje para lograr los objetivos propuestos en el campo de las tecnologias y las comunicaciones .</p>
+        <div class="info-list row">
+            <div class="col-sm-6"><span>Nombre : </span> Marcela Lasso</div>
+            <div class="col-sm-6"><span>Fecha de Nacimiento : </span> Abril 10, 1985 </div>
+            <div class="col-sm-6"><span>Dirección : </span> Colombia, Pasto, Nariño.</div>
+            <div class="col-sm-6"><span>Email : </span> lizinjha@gmail.com</div>
+            <div class="col-sm-6"><span>Telefono : </span> + 57 320 915 3027</div>
+            <div class="col-sm-6"><span>Interes : </span> Freelance, Full-Time</div>
+        </div>
+    </div>
+    <div class="block-content">
+        <h3 class="block-title">Profesional</h3>
+        <div *ngFor="let profex of cv.profesional">
+          <label class="progress-bar-label">{{ profex.nombre }}</label>
+          <div class="progress">
+              <div [style.width.%]=profex.valor class="progress-bar" role="progressbar" attr.aria-valuenow="{{ profex.valor }}" aria-valuemin="0" aria-valuemax="100">
+                  <span>{{ profex.valor }}%</span>
+              </div>
+          </div>
+      </div>
+    </div> -->
+    <div class="block-content">
+        <h3 class="block-title">Servicios</h3>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 service">
+                <div class="service-icon">
+                    <i class="ion-laptop"></i>
+                </div>
+                <h4>Diseño Web</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 service">
+                <div class="service-icon">
+                    <i class="ion-pie-graph"></i>
+                </div>
+                <h4>Desarrollo de Aplicaciones</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 service">
+                <div class="service-icon">
+                    <i class="ion-paintbucket"></i>
+                </div>
+                <h4>Diseño Grafico</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 service">
+                <div class="service-icon">
+                    <i class="ion-printer"></i>
+                </div>
+                <h4>Print Design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 service">
+                <div class="service-icon">
+                    <i class="ion-qr-scanner"></i>
+                </div>
+                <h4>Graphic Design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 service">
+                <div class="service-icon">
+                    <i class="ion-social-buffer"></i>
+                </div>
+                <h4>Print Design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+            </div>
+        </div>
+    </div>
+   
+    <div class="row text-center">
+        <div class="col-md-12 btn-email">
+            <a class="btn lowercase">lizinjha@gmail.com</a>
+        </div>
+    </div>
+</section>
+
